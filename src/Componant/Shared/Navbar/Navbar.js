@@ -1,6 +1,7 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import psycologistIcon from '../../Images/psychology-icon-head-puzzle-mind-vector-design-concept-white-background-186700368.jpg'
 const Navbar = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
@@ -20,7 +21,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <img className='w-1/12 h-1/12 pointer-events-auto cursor-pointer' src={psycologistIcon} alt="" />
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
