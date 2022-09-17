@@ -16,7 +16,7 @@ const psycologists = [
 ]
 const Psychologists = () => {
     return (
-        <div className='trainer-container grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'> {
+        <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 align-middle justify-items-center'> {
             psycologists.map(psycologist => <Psycologist
                 key={Psycologist.id}
                 psycologist={psycologist}

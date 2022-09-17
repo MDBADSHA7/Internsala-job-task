@@ -7,10 +7,20 @@ import Navbar from './Componant/Shared/Navbar/Navbar';
 import NotFound from './Componant/NotFound/NotFound';
 import Appointment from './Componant/Appointment/Appointment';
 import Psychologists from './Componant/Psychologist/Psychologists';
+import { useEffect, useState } from 'react';
+
 function App() {
+  const [theme, setTheme] = useState(false);
+  useEffect(() => {
+    setTheme(JSON.parse(window.localStorage.getItem("theme")));
+  }, []);
+  const handleThemeChange = () => {
+    setTheme(!theme);
+    window.localStorage.setItem("theme", !theme);
+  };
   return (
-    <div className="px-12">
-      <Navbar></Navbar>
+    <div data-theme={theme && "my_dark"} className="">
+      <Navbar handleThemeChange={handleThemeChange} theme={theme}></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/appointment" element={<Appointment></Appointment>}></Route>

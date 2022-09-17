@@ -7,7 +7,7 @@ const Psycologist = ({ psycologist }) => {
             < div class="card w-96 bg-golden-100 shadow-xl" >
                 <figure><img src={img} alt="Shoes" /></figure>
                 <div class="card-body">
-                    <h2 class="card-title">Name:{name}</h2>
+                    <h2 class="text-2xl font-bold">{name}</h2>
                     <h2 class="card-title">Education:{education}</h2>
                     <h2 class="card-title">Experience:{experience}</h2>
                     <h2 class="card-title">Speciality:{speciality}</h2>

@@ -31,7 +31,7 @@ const Banner = () => {
                 <h1
                     className="lg:text-4xl md:text-3xl text-2xl lg:mt-10 lg:mb-12 my-6 font-header font-bold text-center"
                 >
-                    Discounts On Our Exclusives!
+                    Our Special Psycologist!
                 </h1>
                 <Swiper
                     effect={"coverflow"}
