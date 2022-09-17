@@ -1,30 +1,28 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import psycologistIcon from '../../Images/psychology-icon-head-puzzle-mind-vector-design-concept-white-background-186700368.jpg'
 const Navbar = ({ handleThemeChange, theme }) => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/appointment">Appointment</Link></li>
-        <li><Link to="/psycologist">Psycologist</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/Login">Login</Link></li>
+        <li><NavLink to="/appointment">Appointment</NavLink></li>
+        <li><NavLink to="/psycologist">Psycologist</NavLink></li>
+        <li><NavLink to="/Login">Login</NavLink></li>
     </>
     return (
-        <div class="navbar fixed top-0 w-full z-50 lg:px-10 bg-black bg-opacity-30 backdrop-filter backdrop-blur-lg border-b-[0.5px] border-neutral0">
+        <div class="navbar fixed top-0 w-full z-50 lg:px-10 bg-base-200">
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box w-52">
                         {menuItems}
                     </ul>
                 </div>
                 <img className='w-1/12 h-1/12 pointer-events-auto cursor-pointer' src={psycologistIcon} alt="" />
             </div>
             <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal p-0">
+                <ul class="menu menu-compact menu-horizontal p-0 text text-medium font-semibold">
                     {menuItems}
                 </ul>
             </div>
