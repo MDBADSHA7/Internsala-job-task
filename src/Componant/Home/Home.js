@@ -1,10 +1,11 @@
 import React from 'react';
 import Banner from '../Banner';
-import Psycologist from '../Images/banner.jpg'
+import ExtraSection from '../ExtraSection/ExtraSection';
+import Psycologist from '../Images/mn.jpg'
 import Psychologists from '../Psychologist/Psychologists';
 const Home = () => {
     return (
-        <div className='mb-5 mt-20'>
+        <div className='mb-5 mt-20 px-10'>
             <div>
                 <img className='w-full h-screen' src={Psycologist} alt="" />
             </div>
@@ -13,6 +14,7 @@ const Home = () => {
             </div>
             <Banner></Banner>
             <Psychologists></Psychologists>
+            <ExtraSection></ExtraSection>
         </div>
     );
 };
