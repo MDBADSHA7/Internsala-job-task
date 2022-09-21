@@ -3,6 +3,7 @@ import Banner from '../Banner';
 import ExtraSection from '../ExtraSection/ExtraSection';
 import Psycologist from '../Images/mn.jpg'
 import Psychologists from '../Psychologist/Psychologists';
+import Info from './Info/Info';
 import PsycologistChair from './PsycologistChair/PsycologistChair';
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             </div>
             <PsycologistChair></PsycologistChair>
             <Banner></Banner>
+            <Info></Info>
             <Psychologists></Psychologists>
             <ExtraSection></ExtraSection>
         </div>

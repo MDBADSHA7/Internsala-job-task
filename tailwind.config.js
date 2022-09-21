@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   plugins: [require("daisyui")],
   daisyui: {
+    //Dark and White Theam
     themes: [
       {
         my_theme: {

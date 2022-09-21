@@ -75,37 +75,38 @@ const Banner = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/english-for-career-development'}><img className="" src={psycologist1} alt="image" /></Link>
+                        <img className="" src={psycologist1} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/medical-admission-course'}><img className="" src={psycologist2} alt="image" /></Link>
+                        <img className="" src={psycologist2} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/varsity-admission-course'}><img className="" src={psycologist3} alt="image" /></Link>
+                        <img className="" src={psycologist3} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/bank-job'}><img className="" src={psycologist4} alt="image" /></Link>
+                        <img className="" src={psycologist4} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/corporate-job'}><img className="" src={psycologist5} alt="image" /></Link>
+                        <img className="" src={psycologist5} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/improve-english-communcation-skills'}><img className="" src={psycologist6} alt="image" /></Link>
+                        <img className="" src={psycologist6} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/chinese-for-beginners'}><img className="" src={psycologist7} alt="image" /></Link>
+                        <img className="" src={psycologist7} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/developer-job'}><img className="" src={psycologist8} alt="image" /></Link>
+                        <img className="" src={psycologist8} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'course/grammar-and-punctuation'}><img className="" src={psycologist9} alt="image" /></Link>
+                        <img className="" src={psycologist9} alt="image" />
                     </SwiperSlide>
                     <SwiperSlide className="card mb-8 shadow-xl">
-                        <Link to={'/course/freelancer-job'}><img className="" src={psycologist10} alt="image" /></Link>
+                        <img className="" src={psycologist10} alt="image" />
                     </SwiperSlide>
                 </Swiper>
             </div>
+            <hr />
         </div>
     );
 }; SwiperCore.use([Autoplay]);

@@ -27,7 +27,7 @@ const Psychologists = () => {
     const [psycologist, setPsycologist] = useState(null);
     return (
         <div>
-            <h1 className='text text-3xl font-bold text-center'>Welcome to our Psycologist Section !!</h1>
+            <h1 className='text text-3xl font-bold text-center mt-10'>Welcome to our Psycologist Section !!</h1>
             <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 align-middle justify-items-center'> {
                 psycologists.map(psycologist => <Psycologist
                     key={Psycologist.id}
@@ -38,6 +38,7 @@ const Psychologists = () => {
             }
             </div>
             {psycologist && <BookingModal psycologist={psycologist}></BookingModal>}
+            <hr />
         </div>
     );
 };
