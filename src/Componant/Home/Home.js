@@ -5,6 +5,7 @@ import Psycologist from '../Images/mn.jpg'
 import Psychologists from '../Psychologist/Psychologists';
 import Info from './Info/Info';
 import PsycologistChair from './PsycologistChair/PsycologistChair';
+import Services from './Services/Services';
 const Home = () => {
     return (
         <div className='mb-5 mt-20 px-10'>
@@ -17,6 +18,7 @@ const Home = () => {
             <PsycologistChair></PsycologistChair>
             <Banner></Banner>
             <Info></Info>
+            <Services></Services>
             <Psychologists></Psychologists>
             <ExtraSection></ExtraSection>
         </div>
