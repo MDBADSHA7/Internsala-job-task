@@ -1,6 +1,5 @@
 import React from 'react';
 import SchoolPsycologist from "../../Images/SchoolPsycologist.png";
-import EducationPsycologist from "../../Images/EducationPsycologist.png";
 import ClinicalPsycologist from "../../Images/ClinicalPsycologist.png";
 import HelthPsycologist from "../../Images/helthPsycologist.png";
 import PsycologistIcon from "../../Images/PsycologistSvgIcon.png";
@@ -17,43 +16,32 @@ const Services = () => {
             img: SchoolPsycologist
         },
         {
-            _id: 1,
+            _id: 2,
             name: "Teeth Whitening",
             description: "",
             img: HumanPsycologist
         },
+
         {
-            _id: 1,
-            name: "Fluoride Treatment",
-            description: "",
-            img: EducationPsycologist
-        },
-        {
-            _id: 2,
+            _id: 3,
             name: "Cavity Filling",
             description: "",
             img: ClinicalPsycologist
         },
         {
-            _id: 2,
+            _id: 4,
             name: "Cavity Filling",
             description: "",
             img: PsycologistIcon
         },
         {
-            _id: 1,
+            _id: 5,
             name: "Teeth Whitening",
             description: "",
             img: HelthPsycologist
         },
         {
-            _id: 1,
-            name: "Teeth Whitening",
-            description: "",
-            img: PsycologistHome
-        },
-        {
-            _id: 1,
+            _id: 6,
             name: "Teeth Whitening",
             description: "",
             img: PsycologistBed
@@ -64,7 +52,7 @@ const Services = () => {
             <div className='mt-5 text-center text-3xl font-bold'>
                 <h1>Our Services</h1>
             </div>
-            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 align-middle justify-items-center'>
+            <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 align-middle justify-items-center gap-5'>
                 {
                     services.map(service => <Service
                         key={service._id}

@@ -1,4 +1,6 @@
 import React from 'react';
+import Appointment from '../Appointment/Appointment';
+import AvailableAppointments from '../Appointment/AvailableAppointments';
 import Banner from '../Banner';
 import ExtraSection from '../ExtraSection/ExtraSection';
 import Psycologist from '../Images/mn.jpg'
